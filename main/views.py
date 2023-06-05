@@ -27,7 +27,7 @@ def test(request):
 def send_email(request):
     name = request.POST.get('name')
     post = request.POST.get('phone')
-    admin_id = 502447701
+    admin_id = 123456789    # here is your telegram id
 
     message = f"ЗАЯВКА!!\n\nОт: {name}\n\nЦель: {post}"
     bot.send_message(chat_id=admin_id, text=message)
