@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Done</title>
+</head>
+<body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-4 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <title>firr</title>
+        <style>
+            .firr {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 250px; /* Положение от верхнего края */
+     right: 700px; /* Положение от правого края */
+     width: 140px; /* Ширина блока */
+     background: #45ffff; /* Цвет фона */
+     border: 3px solid black; /* Параметры рамки */
+     padding: 25px; /* Поля вокруг текста */
+     text-decoration: none; /* Убирает подчеркивание для ссылок */
+      font-family: "Arial", black, monospace; /* Семейство шрифта */
+    }
+        </style>
+
+
+        <style>
+            .troll {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 200px; /* Положение от верхнего края */
+     right: 750px; /* Положение от правого края */
+     width: 100px; /* Ширина блока */
+     background: #fff; /* Цвет фона */
+     border: 0px solid black; /* Параметры рамки */
+     padding: 0px; /* Поля вокруг текста */
+     white-space: nowrap; /* Переносов в тексте нет */
+     font-weight: bold; /* Жирное начертание */
+
+    }
+        </style>
+
+        <p><a class="firr btn btn-outline-primary" href="{% url 'home' %}">Главная</a></p>
+    <div class="white-space:nowrap">
+        <p class="troll text-dark white-space:nowrap">ОТПРАВЛЕНО!</p>
+    </div>
+
+    </div>
+
+</body>
+</html>

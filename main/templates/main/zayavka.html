@@ -1,0 +1,92 @@
+<title>Заявка</title>
+        <style>
+            .lols {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 150px; /* Положение от верхнего края */
+     right: 710px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .riti {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 170px; /* Положение от верхнего края */
+     right: 710px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .sendi {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 170px; /* Положение от верхнего края */
+     right: 629px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .tg1 {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 150px; /* Положение от верхнего края */
+     right: 615px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .niz {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 180px; /* Положение от верхнего края */
+     right: 710px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .num {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 180px; /* Положение от верхнего края */
+     right: 660px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+<style>
+            .troe {
+     position: absolute; /* Абсолютное позиционирование */
+     top: 215px; /* Положение от верхнего края */
+     right: 799px; /* Положение от правого края */
+
+
+
+    }
+        </style>
+
+
+       <form class="form" method="post" action="send"> {% csrf_token %}
+
+	<div class="form__item">
+		<input class="form__input lols" type="text" name="name" required>
+		<label class="form__label tg1">Ваш telegram</label>
+	</div>
+	<div class="form__item">
+		<input class="form__input niz" type="text" name="phone" required>
+		<label class="form__label num">Задача</label>
+	</div>
+	<input class="form__input btn troe" type="submit" value="Отправить">
+	<input type="hidden" name="act" value="order">
+    </form>
