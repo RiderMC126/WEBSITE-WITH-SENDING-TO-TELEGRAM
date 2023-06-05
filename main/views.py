@@ -33,17 +33,3 @@ def send_email(request):
     bot.send_message(chat_id=admin_id, text=message)
 
     return render(request, 'main/send.html')
-
-
-
- #    subject = 'Новая заявка!'
-#    message = request.POST.get('name')
- #   email_from = 'mark.parshakov33@mail.ru'
- #   recipient_list = ['ridermc123@gmail.com', ]
- #   send_mail(subject, message, email_from, recipient_list)
-  #  return HttpResponse("Successful")
-
-
-
-
-
